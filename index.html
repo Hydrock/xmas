@@ -5,8 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>XMas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
     <style>
       @import url("https://fonts.googleapis.com/css?family=Mountains+of+Christmas");
+
+      html, body {
+          width: 100%;
+      }
+
+      * {
+          box-sizing: border-box;
+      }
 
       .snow {
         position: absolute;
@@ -34,7 +44,7 @@
         grid-column: 1/4;
         align-self: center;
         justify-self: center;
-        font-size: 6rem;
+        font-size: 4rem;
       }
 
       .fox {
@@ -54,6 +64,7 @@
     </style>
   </head>
   <body>
+  <audio src="./xmas.mp3" autoplay preload controls></audio>
     <div id="particles-js" class="snow"></div>
     <div class="trees">
       <div class="merry"><h1>Merry Christmas</h1></div>
@@ -70,7 +81,7 @@
         />
       </div>
     </div>
-    <audio src="./xmas.mp3" autoplay preload controls></audio>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.js"></script>
     <script>
       particlesJS("particles-js", {
